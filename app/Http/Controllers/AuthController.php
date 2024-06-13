@@ -8,7 +8,6 @@ use App\Http\Factories\AuthServiceFactory;
 use App\Http\Requests\LoginRequest;
 use App\Http\Responses\FailureResponse;
 use App\Http\Responses\LoginResponse;
-use External\Foo\Exceptions\AuthenticationFailedException;
 use Illuminate\Support\Str;
 use Symfony\Component\HttpFoundation\Response;
 

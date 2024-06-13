@@ -9,9 +9,8 @@ use Illuminate\Auth\AuthenticationException;
 
 class BarAuthService extends AuthService implements BarAuthServiceContract
 {
-    public function __construct()
+    public function __construct(protected LoginService $auth)
     {
-        $this->auth = new LoginService();
     }
 
     /**

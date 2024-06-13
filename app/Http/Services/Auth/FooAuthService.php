@@ -9,9 +9,8 @@ use External\Foo\Exceptions\AuthenticationFailedException;
 
 class FooAuthService extends AuthService implements FooAuthServiceContract
 {
-    public function __construct()
+    public function __construct(protected AuthWS $auth)
     {
-        $this->auth = new AuthWS();
     }
 
     /**

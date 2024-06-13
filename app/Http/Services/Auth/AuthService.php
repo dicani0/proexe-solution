@@ -7,7 +7,6 @@ use Illuminate\Support\Str;
 
 abstract class AuthService implements AuthServiceContract
 {
-    protected $auth;
 
     protected function createJWT(string $login): string
     {

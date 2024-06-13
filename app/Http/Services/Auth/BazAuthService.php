@@ -10,9 +10,8 @@ use External\Baz\Auth\Responses\Failure;
 class BazAuthService extends AuthService implements BazAuthServiceContract
 {
 
-    public function __construct()
+    public function __construct(protected Authenticator $auth)
     {
-        $this->auth = new Authenticator();
     }
 
     /**
